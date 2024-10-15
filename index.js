@@ -60,23 +60,28 @@ const sumOfNotDivisibleByTen = () => {
 
 //Problem 6
 
-const greaterNum = (a, b, c, d) => {
- if (typeof a === "num" && typeof b === "num" && typeof c === "num" && typeof d === "num"){
-      if (){
+// const greaterNum = (a, b, c, d) => {
+//  if (typeof a === "num" && typeof b === "num" && typeof c === "num" && typeof d === "num"){
+//       if (){
 
-      }
-    } else {
-        return null
-    }
-};
+//       }
+//     } else {
+//         return null
+//     }
+// };
 
 // const arr = [1, 2, 2];
 // const max = Math.max(...arr);
 // console.log(max);
 
-
 //Bonus 1
 
 const multiplesOfFourAndSix = () => {
-
-}
+  let arr = [];
+  for (let i = 0; i < 100; i++)
+    if (i % 4 === 0 && i % 6 === 0) {
+      arr.push(i);
+    }
+  return arr;
+};
+console.log(multiplesOfFourAndSix());
